@@ -1,4 +1,6 @@
 /* import font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap");
+
 @font-face {
   font-family: Norse-Bold;
   src: url("font/Norse-Bold.otf");
@@ -10,6 +12,10 @@
   padding: 0;
   box-sizing: border-box;
   outline: 1px solid red;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
 }
 
 .container {
@@ -56,4 +62,8 @@
   color: #fff;
   text-align: center;
   margin-top: auto;
+}
+
+.container .left .credit a {
+  color: #fff;
 }
