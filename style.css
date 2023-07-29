@@ -1,0 +1,59 @@
+/* import font */
+@font-face {
+  font-family: Norse-Bold;
+  src: url("font/Norse-Bold.otf");
+}
+
+/* default style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* left container style */
+.container .left {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 100vh;
+  background-image: url("img/leaf-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container .left .logo-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 22vh;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .left .logo-container .odin-logo {
+  width: 5rem;
+  height: auto;
+}
+
+.container .left .logo-container .odin-title {
+  font-family: "Norse-Bold";
+  color: #fff;
+  font-size: 5rem;
+}
+
+.container .left .credit {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+}
