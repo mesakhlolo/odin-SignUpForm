@@ -20,16 +20,14 @@ body {
 
 .container {
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* left container style */
 .container .left {
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  height: 100vh;
+  flex: 2;
   background-image: url("img/leaf-background.jpg");
   background-position: center;
   background-size: cover;
@@ -66,4 +64,57 @@ body {
 
 .container .left .credit a {
   color: #fff;
+}
+
+/* right container style */
+.container .right {
+  background-color: #f9fafb;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .right .text-info {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 2rem 3rem;
+}
+
+.container .right .text-info p:nth-of-type(3) {
+  margin-top: 1.5rem;
+}
+
+/* input section style */
+.container .right .input-section {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container .right .input-section p {
+  width: 100%;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.container .right .input-section .inputs {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.container .right .input-section .inputs label {
+  text-transform: uppercase;
+}
+
+.container .right .input-section .inputs input {
+  border: 1px solid #d6d9dc;
+  border-radius: 4px;
+  padding: 4px 7px;
+  font-size: 14px;
 }
