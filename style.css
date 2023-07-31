@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
   /* outline: 1px solid red; */
 }
 
@@ -108,12 +109,16 @@ body {
   width: 35%;
 }
 
+.container .right .form-section .input-section .inputs input:focus {
+  border: 1px solid blue;
+}
+
 .container .right .form-section .input-section .inputs label {
   text-transform: uppercase;
 }
 
 .container .right .form-section .input-section .inputs input {
-  border: 1px solid #d6d9dc;
+  border: 1px solid #e5e7eb;
   border-radius: 4px;
   padding: 4px 7px;
   font-size: 14px;
