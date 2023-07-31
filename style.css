@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -86,7 +86,7 @@ body {
 }
 
 /* input section style */
-.container .right .input-section {
+.container .right .form-section .input-section {
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -95,26 +95,53 @@ body {
   box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container .right .input-section p {
+.container .right .form-section .input-section p {
   width: 100%;
   text-align: left;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-.container .right .input-section .inputs {
+.container .right .form-section .input-section .inputs {
   display: flex;
   flex-direction: column;
   width: 35%;
 }
 
-.container .right .input-section .inputs label {
+.container .right .form-section .input-section .inputs label {
   text-transform: uppercase;
 }
 
-.container .right .input-section .inputs input {
+.container .right .form-section .input-section .inputs input {
   border: 1px solid #d6d9dc;
   border-radius: 4px;
   padding: 4px 7px;
   font-size: 14px;
+}
+
+/* button container style */
+.container .right .form-section .button-container {
+  padding: 2rem 3rem;
+}
+
+.container .right .form-section .button-container button {
+  border: none;
+  background-color: #596d48;
+  padding: 12px 48px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.container .right .form-section .button-container p {
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+.container .right .form-section .button-container a {
+  color: #596d48;
+  text-decoration: none;
 }
